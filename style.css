@@ -219,3 +219,8 @@ header {
     color: #cca0f0;
     text-decoration: underline;
 }
+
+.error {
+    width: 600px;
+    height: 447px;
+}
