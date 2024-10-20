@@ -1,0 +1,221 @@
+body {
+    background-color: #202326;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+html, body {
+    height: 100vh;
+}
+
+* {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    margin: 35px;
+    font-weight: bolder;
+}
+
+.content-container {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;   
+}
+
+.header {
+    background-color: #25282b;
+    height: 100%;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content {
+    background-color: #2e3236;
+    height: 100%;
+    width: 100%;
+    margin: 25.888;
+    overflow: scroll;
+}
+
+.content-section-title {
+    color: white;
+    font-weight: bolder;
+    font-size: xx-large;
+    margin-left: 5px;
+}
+
+.content-section {
+    margin-left: 10px;
+}
+
+.content-margin {
+    margin: 28.888px;
+}
+
+.header-title-container {
+    margin-top: 10px;
+    height: 80px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.header-title-container:hover {
+    cursor: pointer;
+    background-color: #333639;
+}
+
+.header-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    font-size: 20px;
+    background-color: #e06474;
+    border: #30344c solid 6px;
+    font-weight: bolder;
+    text-align: center;
+    height: 50px;
+}
+
+.header-section-title {
+  font-weight: bolder;
+  color: #ee7381;  
+}
+
+.header-section {
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    
+}
+
+.header-section[open] .header-section-title {
+    background-color: #393034;
+}
+
+.header-section .header-section-title:hover {
+    background-color: #333639;
+}
+
+.header-section-link {
+    font-size: 15px;
+    color: #e0dcdc;
+}
+
+.header-section-link:hover {
+    background-color: #333639;
+}
+
+.card {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 45px;
+}
+
+.card-header {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    width: 95%;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    padding-left: 30px;
+}
+
+.card-footer {
+    width: 95%;
+    height: fit-content;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.card-footer a {
+    margin: 0 5px; /* Add margin between links */
+    text-decoration: none; /* Optional: remove underline from links */
+    color: inherit; /* Optional: inherit color from parent */
+}
+
+.card-footer a:hover {
+    text-decoration: underline; /* Optional: underline on hover */
+}
+
+/* Ensure link styles apply */
+.card-footer a {
+    margin: 0 5px; /* Add margin between links */
+    text-decoration: none; /* Remove underline */
+    color: #90ccfc; /* Set the link color directly */
+}
+
+.card-footer a.link {
+    color: #90ccfc; /* Ensure .link class color is applied */
+    text-decoration: underline; /* Optional: keep underline for .link */
+}
+
+.card-footer a:hover {
+    text-decoration: underline; /* Optional: underline on hover */
+    color: #70a3d0; /* Change color on hover if desired */
+}
+
+.green-header {
+    background-color: #336648;
+    color: #ddffdd;
+}
+
+.green-footer {
+    color: #ddffdd; /* This may affect links inside .green-footer */
+    background-color: #28382d;
+}
+
+.blue-footer {
+    color: #bfefff; /* This may affect links inside .green-footer */
+    background-color: #305070;
+}
+
+.blue-header {
+    background-color: #303d4f;
+    color: #bfefff;
+}
+
+
+
+
+
+
+.code-snippet {
+    border-radius: 6px;
+    background-color: #22252d;
+    color: #d18f8f;
+    width: fit-content;
+    height: fit-content;
+    padding: 6px;
+    transform: translate(0px, -20px);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.link {
+    color: #cca0f0;
+    text-decoration: underline;
+}
