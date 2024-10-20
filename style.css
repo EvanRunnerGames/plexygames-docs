@@ -24,10 +24,19 @@ a {
 header {
     margin: 35px;
     font-weight: bolder;
+    padding-bottom: 20px;
+    border-bottom: #585454 solid 1px;
+}
+
+footer {
+    padding-top: 20px;
+    margin: 35px;
+    border-top: #585454 solid 1px;
+    color: #b0acac;
 }
 
 .content-container {
-    width: 80%;
+    width: fit-content;
     height: 100%;
     display: flex;
     flex-direction: row;   
@@ -45,7 +54,7 @@ header {
 .content {
     background-color: #2e3236;
     height: 100%;
-    width: 100%;
+    width: 900px;
     margin: 25.888;
     overflow: scroll;
 }
@@ -68,7 +77,7 @@ header {
 .header-title-container {
     margin-top: 10px;
     height: 80px;
-    width: 90%;
+    width: 240px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -94,8 +103,8 @@ header {
 }
 
 .header-section-title {
-  font-weight: bolder;
-  color: #ee7381;  
+  color: #ee7381;
+  width: 100%;
 }
 
 .header-section {
@@ -198,21 +207,16 @@ header {
     color: #bfefff;
 }
 
-
-
-
-
-
 .code-snippet {
     border-radius: 6px;
     background-color: #22252d;
     color: #d18f8f;
     width: fit-content;
     height: fit-content;
-    padding: 6px;
-    transform: translate(0px, -20px);
-    margin-left: 10px;
-    margin-right: 10px;
+    padding: 2px;
+    display: inline;
+    margin-left: 2px;
+    margin-right: 2px;
 }
 
 .link {
@@ -223,4 +227,16 @@ header {
 .error {
     width: 600px;
     height: 447px;
+}
+
+.information-emoji {
+    width: 12px;
+    margin-right: 6px;
+    margin-left: 6px;
+}
+
+@media (max-width: 1200px) {
+    .content {
+        width: 100%;
+    }
 }
