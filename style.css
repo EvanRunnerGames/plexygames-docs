@@ -298,6 +298,29 @@ footer {
     margin-left: 6px;
 }
 
+.domain-register {
+    width: 376px;
+    height: fit-content;
+    background-color: white;
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+.domain-register-header {
+    color: white;
+    width: 100%;
+    background-color: #6894ec;
+}
+
+.black-text {
+    color: black;
+}
+
+.right-choice {
+    color: white;
+    background-color: green;
+}
+
 @media (max-width: 1200px) {
     .content {
         width: 100%;
