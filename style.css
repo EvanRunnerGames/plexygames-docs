@@ -26,13 +26,18 @@ header {
     font-weight: bolder;
     padding-bottom: 20px;
     border-bottom: #585454 solid 1px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
 footer {
     padding-top: 20px;
-    margin: 35px;
     border-top: #585454 solid 1px;
     color: #b0acac;
+    width: 100%;
+    margin-top: 25px;
 }
 
 .content-container {
@@ -77,11 +82,11 @@ footer {
 .header-title-container {
     margin-top: 10px;
     height: 80px;
-    width: 240px;
+    width: 260px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 60px;
+    outline: 60px solid transparent; /* Initial transparent outline */
 }
 
 .header-title-container:hover {
@@ -108,6 +113,7 @@ footer {
 }
 
 .header-section {
+    margin-top: 10px;
     width: 100%;
     cursor: pointer;
     display: flex;
@@ -130,6 +136,56 @@ footer {
 .header-section-link:hover {
     background-color: #333639;
 }
+
+.search-bar {
+    height: 35px;
+    width: 260px;
+    border-radius: 100px;
+    border: transparent;
+    background-color: #333537;
+    color: #929394;
+    font-weight: bolder;
+    border-left: #333537 solid 14px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.pre-nex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 25px;
+}
+
+.pre-nex-button {
+    background-color: #404040;
+    width: fit-content;
+    padding: 7px;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    outline: #393939 solid 2px;
+    border-radius: 2px;
+    border-top: #6b6b6b solid 1px;
+    border-bottom: #3a3a3a solid 4px;
+    transition: all 0.2s ease-in-out;
+}
+
+.pre-nex-button:hover {
+    cursor: pointer;
+    filter: brightness(120%);
+    
+}
+
+.pre-nex-button-disabled:hover {
+    cursor: not-allowed;
+    filter: brightness(100%);
+}
+
+
 
 .card {
     width: 100%;
@@ -207,6 +263,13 @@ footer {
     color: #bfefff;
 }
 
+.sidebar-iframe {
+    border: transparent solid 0px; /* No border */
+    height: 100vh; /* Full viewport height */
+    width: 300px; /* Fixed width */
+}
+
+
 .code-snippet {
     border-radius: 6px;
     background-color: #22252d;
@@ -229,8 +292,8 @@ footer {
     height: 447px;
 }
 
-.information-emoji {
-    width: 12px;
+.emoji {
+    width: 14px;
     margin-right: 6px;
     margin-left: 6px;
 }
